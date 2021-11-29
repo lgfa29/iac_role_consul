@@ -1,5 +1,8 @@
+{% raw %}
 data_dir = "/opt/consul"
+bind_addr = "{{ GetPrivateIP }}"
 ui_config {
   enabled = true
 }
 retry_join = [<RETRY_JOIN>]
+{% endraw %}
